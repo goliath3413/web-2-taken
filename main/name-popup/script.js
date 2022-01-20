@@ -1,7 +1,7 @@
 var naam = prompt("WHATS YO NAME")
-alert('Who asked tho')
+alert('Nobody asked lol')
 
 var color = prompt("gib meh colur");
-var body = document.getElementsByTagName("h1")[0];
-console.log(el);
-el.style.backgroundColor = color;
+var body = document.getElementsByTagName("body")[0];
+console.log(body);
+body.style.backgroundColor = color;
