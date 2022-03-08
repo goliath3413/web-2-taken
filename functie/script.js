@@ -4,8 +4,17 @@ var singer1 = {    firstName: "Jole-Richard",    lastName: "Hughes",    genre: "
   
   var List = [singer1, singer2, singer3];
   for (let i = 0; i < List.length; i++) {
-    console.log(List[i]);
+    printSinger(List[i]);
 }
 
-console.log(List[0]);
+
+
+
+
+
+
+function printSinger(parameter) {
+    console.log(parameter.firstName + ' ' + parameter.lastName)
+}
+
 
