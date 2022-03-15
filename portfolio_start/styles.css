@@ -77,3 +77,24 @@ button {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+.imgs {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+  font-size: x-large;
+  padding: 20px;
+  margin: 50px;
+  list-style-type: none;
+}
+video {
+  height: 500px;
+  width: 500px;
+  margin: 50px;
+}
+@keyframes myanimation {
+  0% {background-color: pink;}
+  25%{background-color:rgb(255, 255, 137);}
+  50%{background-color:lightgreen;}
+  75%{background-color:lightgoldenrodyellow;}
+  100% {background-color: yellowgreen;}
+}
