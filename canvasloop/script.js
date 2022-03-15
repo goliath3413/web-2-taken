@@ -9,6 +9,7 @@ let ctx = document.getElementById('canvas').getContext('2d');
   // red, green, blue moeten waardes zijn tussen 0 tem 255 (geen cijfers na de komma)
   // alpha moet een waarde zijn tussen 0 en 1, 1 is volledig zichtbaar, 0 is onzichtbaar
   function makeRGBA(red, green, blue, alpha) {
+  
     return 'rgba(' + red + ',' + green + ',' + blue + ',' + alpha + ')';
   }
 
@@ -35,17 +36,18 @@ let ctx = document.getElementById('canvas').getContext('2d');
   // 1. herhaal onderstaande code 100 keer of meer
   // 2. zorg dat kleur willekeurig is (tussen de eerste 3 parameters voor de makeRGBA functie moeten tussen 0 en 255 zijn)
   function createCircle() {
-    let rgbaColor = makeRGBA(255, 0, 50, 0.5);
+    let rgbaColor = makeRGBA(random(255), random(255), random(250), 1);
     ctx.beginPath();
     ctx.fillStyle = rgbaColor; // kleur aanmaken
-    ctx.arc(random(WIDTH), random(HEIGHT), random(100), 0, 2 * Math.PI);
+    ctx.arc(random(WIDTH), random(HEIGHT), random(50), 0, 2 * Math.PI);
     ctx.fill();
   }
 
+  
   createCircle();
 
   let i; // teller
-  let hoeveelKeerLoopen = 25;
+  let hoeveelKeerLoopen = 100;
   for (i = 0; i < hoeveelKeerLoopen; i++) {
     // stuk code die je uitvoert
     createCircle();

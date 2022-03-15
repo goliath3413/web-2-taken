@@ -77,10 +77,3 @@ button {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-@keyframes myanimation {
-  0% {background-color: lightblue;}
-  25%{background-color:rgb(255, 255, 137);}
-  50%{background-color:pink;}
-  75%{background-color:lightgoldenrodyellow;}
-  100% {background-color: yellowgreen;}
-}

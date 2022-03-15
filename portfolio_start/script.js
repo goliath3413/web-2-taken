@@ -5,9 +5,7 @@ function copyText() {
       ("geo.tirnovan@gmail.com");
 }
 
-function myFunction()
-{   
-    var colors = ["green", "black","yellow","Blue","Orange"],
-    selectedColor = colors[Math.floor(Math.random()*colors.length)]
-    $("body").css("background-color", selectedColor);
+function copyText() {
+  navigator.clipboard.writeText
+  ("goliath3413#6861")
 }
